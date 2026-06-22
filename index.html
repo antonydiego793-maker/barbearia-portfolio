@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navalha Afiada | Barbearia Clássica - Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">NAVALHA <span>AFIADA</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#agendamento">Simulador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Corte<br>Com Respeito.</h1>
+                <p>Mais que um trato no visual, um momento de tradição. Venha relaxar, tomar uma boa bebida e ouvir uma boa música enquanto cuidamos do seu estilo.</p>
+                <a href="#servicos" class="btn-vintage">Ver Preços</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header-left">
+                <span>01 // O QUE FAZEMOS</span>
+                <h2>Nossos Serviços</h2>
+            </div>
+            
+            <div class="services-list">
+                <div class="service-row">
+                    <div class="service-info">
+                        <h3>Corte Clássico</h3>
+                        <p>Feito inteiramente na tesoura ou máquina, finalizado com pomada importada.</p>
+                    </div>
+                    <span class="price">R$ 45,00</span>
+                </div>
+                
+                <div class="service-row">
+                    <div class="service-info">
+                        <h3>Barba de Respeito</h3>
+                        <p>Processo tradicional com toalha quente, óleo hidratante e navalha afiada.</p>
+                    </div>
+                    <span class="price">R$ 35,00</span>
+                </div>
+                
+                <div class="service-row">
+                    <div class="service-info">
+                        <h3>Sobrancelha</h3>
+                        <p>Alinhamento fino e limpeza cirúrgica utilizando navalha fina.</p>
+                    </div>
+                    <span class="price">R$ 15,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agendamento" class="booking">
+        <div class="split-container">
+            <div class="booking-text-side">
+                <span>02 // ORÇAMENTO INSTANTÂNEO</span>
+                <h2>Simule seu Combo</h2>
+                <p>Escolha exatamente o que você precisa hoje. Nosso sistema calcula o valor total na hora para você agendar sem surpresas.</p>
+            </div>
+            
+            <div class="booking-form-side">
+                <form id="bookingForm" class="vintage-form">
+                    <div class="checkbox-wrapper">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="service" value="45" class="service-checkbox">
+                            <span class="checkmark"></span>
+                            Corte de Cabelo
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="service" value="35" class="service-checkbox">
+                            <span class="checkmark"></span>
+                            Barba Completa
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="service" value="15" class="service-checkbox">
+                            <span class="checkmark"></span>
+                            Sobrancelha
+                        </label>
+                    </div>
+
+                    <div class="price-box">
+                        <span class="label">VALOR ESTIMADO</span>
+                        <span id="totalPrice" class="total-value">R$ 0,00</span>
+                    </div>
+
+                    <button type="submit" class="btn-vintage">Reservar Cadeira</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <p>&copy; 2026 Navalha Afiada. Todos os direitos reservados.</p>
+            <p>Av. dos Cavalheiros, 456 - Bairro Alto | (11) 98888-8888</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
